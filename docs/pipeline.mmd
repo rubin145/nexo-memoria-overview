@@ -1,0 +1,10 @@
+flowchart TD
+    A[Judicial documents] --> B[Text processing]
+    B --> C[Entities, relations and events]
+    C --> D[Consolidation and entity resolution]
+    D --> E[Validation]
+    E --> F[Knowledge graph]
+    F --> G[Search and exploration]
+    T[Temporal normalization component] -.-> D
+    H[Human review and provenance] -.-> D
+    H -.-> E
